@@ -1,0 +1,22 @@
+name: ptma-cd8-rnaseq
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - snakemake
+  - salmon
+  - fastqc
+  - multiqc
+  - pandas
+  - r-base
+  - r-ggplot2
+  - r-pheatmap
+  - r-optparse
+  # DESeq2/tximport are Bioconductor packages in conda.
+  - bioconductor-deseq2
+  - bioconductor-tximport
+  - bioconductor-apeglm
+  - bioconductor-ihw
+  - bioconductor-rtracklayer
+  - bioconductor-org.mm.eg.db
+  - bioconductor-annotationdbi

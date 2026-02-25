@@ -1,0 +1,7 @@
+sample	condition	fastq1	fastq2
+vector_rep1	vector	data/fastq/SRR35372103_1.fastq.gz	data/fastq/SRR35372103_2.fastq.gz
+vector_rep2	vector	data/fastq/SRR35372105_1.fastq.gz	data/fastq/SRR35372105_2.fastq.gz
+vector_rep3	vector	data/fastq/SRR35372104_1.fastq.gz	data/fastq/SRR35372104_2.fastq.gz
+ptma_oe_rep1	ptma_oe	data/fastq/SRR35372106_1.fastq.gz	data/fastq/SRR35372106_2.fastq.gz
+ptma_oe_rep2	ptma_oe	data/fastq/SRR35372107_1.fastq.gz	data/fastq/SRR35372107_2.fastq.gz
+ptma_oe_rep3	ptma_oe	data/fastq/SRR35372108_1.fastq.gz	data/fastq/SRR35372108_2.fastq.gz

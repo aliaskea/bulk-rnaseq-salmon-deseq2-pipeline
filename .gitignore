@@ -1,0 +1,95 @@
+# -----------------------------
+# RNA-seq / bioinformatics data
+# -----------------------------
+
+# FASTQ (raw reads)
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+
+# Alignments
+*.bam
+*.bai
+*.sam
+*.cram
+*.crai
+
+# Common reference genome / annotation files
+*.fa
+*.fa.gz
+*.fasta
+*.fasta.gz
+*.fna
+*.fna.gz
+*.gtf
+*.gtf.gz
+*.gff
+*.gff3
+*.gff.gz
+*.gff3.gz
+*.2bit
+*.dict
+*.fai
+
+# -----------------------------
+# Workflow outputs (large files)
+# -----------------------------
+reports/
+multiqc_data/
+*.h5
+*.rds
+*.RData
+*.pdf
+*.svg
+
+# -----------------------------
+# Environments and workflow state
+# -----------------------------
+.snakemake/
+.conda/
+.mamba/
+.venv/
+venv/
+env/
+ENV/
+conda-meta/
+
+# -----------------------------
+# Logs and temp files
+# -----------------------------
+logs/
+log/
+*.log
+*.out
+*.err
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# -----------------------------
+# macOS
+# -----------------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# -----------------------------
+# Project-specific raw/reference dirs
+# -----------------------------
+data/raw/
+data/reference/
+
+# local R session files
+.Rhistory
+.RData
+
+# heavy workflow outputs
+results/salmon/
+results/reference/salmon_index/
+results/qc/fastqc/
+results/qc/multiqc_data/
+results/test_quant/
+refs/salmon_index/

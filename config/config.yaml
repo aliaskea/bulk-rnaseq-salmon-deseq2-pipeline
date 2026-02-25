@@ -1,0 +1,17 @@
+project: ptma-cd8-rnaseq-analysis
+
+reference:
+  transcriptome_fasta: "refs/Mus_musculus.GRCm39.cdna.all.fa.gz"
+  gtf: "refs/Mus_musculus.GRCm39.110.gtf.gz"
+
+paths:
+  samples: "config/samples.tsv"
+  contrasts: "config/contrasts.tsv"
+  tx2gene: "results/reference/tx2gene.tsv"
+  salmon_index: "results/reference/salmon_index"
+  salmon_quant_dir: "results/salmon"
+  qc_dir: "results/qc"
+  deseq2_dir: "results/deseq2"
+
+params:
+  salmon_libtype: "A"

@@ -1,0 +1,8 @@
+metric	value
+total_rows	35551
+tested_rows_non_na	19644
+padj_lt_0_10	2
+padj_lt_0_05	2
+padj_lt_0_05_abs_log2fc_ge_1	1
+up_padj_lt_0_05	2
+down_padj_lt_0_05	0

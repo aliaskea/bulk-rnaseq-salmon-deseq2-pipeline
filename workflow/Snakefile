@@ -1,0 +1,20 @@
+configfile: "config/config.yaml"
+
+import pandas as pd
+
+SAMPLES_DF = pd.read_csv(config["paths"]["samples"], sep="\t")
+SAMPLES = SAMPLES_DF["sample"].tolist()
+
+include: "rules/qc.smk"
+include: "rules/salmon.smk"
+include: "rules/deseq2.smk"
+
+rule all:
+    input:
+        expand(
+            f"{config['paths']['salmon_quant_dir']}" + "/{sample}/quant.sf",
+            sample=SAMPLES,
+        ),
+        f"{config['paths']['qc_dir']}/multiqc_report.html",
+        f"{config['paths']['tx2gene']}",
+        f"{config['paths']['deseq2_dir']}/deseq2_results.tsv",
